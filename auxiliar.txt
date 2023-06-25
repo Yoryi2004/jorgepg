@@ -1,0 +1,6 @@
+npx sequelize-cli model:generate --name Cliente --attributes CedulaC:integer,NombreC:string,DireccionC:string,CiudadC:string,Telefono:integer
+npx sequelize-cli model:generate --name Producto --attributes CodProducto:integer,Descripcion:string,Valor:integer,Id_Categoria:integer,Producto:string,Stock:integer
+npx sequelize-cli model:generate --name Factura --attributes Num_Factura:integer,Fecha_Factura:date,CedulaC:integer
+
+npx sequelize-cli model:generate --name Detalle_Factura --attributes id:integer,Categoria_Producto:string,Cantidad:integer,Precio:integer,Num_Factura:integer,CodProducto:integer
+npx sequelize-cli model:generate --name Usuario --attributes User:string,Contraseña:string,Nombre:string,Apellido:string,Correo:string,Telefono:integer
